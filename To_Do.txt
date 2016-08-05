@@ -1,0 +1,5 @@
+To do:
+- Make sure favicon works when operating from the Github server
+- Make it so web content is on top of video
+		- Maybe make video a little opaque so that it doesn't detract from web navigability?
+		

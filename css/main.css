@@ -122,12 +122,11 @@ video#bgvid{
 /**
  * Wrapper
  */
-/*
 .wrapper {
   max-width: -webkit-calc(800px - (30px * 2));
   max-width: calc(800px - (30px * 2));
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: 30px;
+  margin-left: 30px;
   padding-right: 30px;
   padding-left: 30px; }
   @media screen and (max-width: 800px) {
@@ -140,7 +139,6 @@ video#bgvid{
 /**
  * Clearfix
  */
- /*
 .wrapper:after, .footer-col-wrapper:after {
   content: "";
   display: table;

@@ -3,3 +3,5 @@ To do:
 - Make it so web content is on top of video
 		- Maybe make video a little opaque so that it doesn't detract from web navigability?
 - Make the navbar prettier
+- Make all the text prettier (both in color and font)
+- Make it so the header doesn't change when you run your mouse over it

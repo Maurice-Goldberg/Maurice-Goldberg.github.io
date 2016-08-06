@@ -113,7 +113,7 @@ video#bgvid{
   min-width: 100%;
   min-height: 100%;
   width: auto;
-  height: auto;
+  height: 50px;
   background: url(https://dl.dropboxusercontent.com/s/00l47ip9t6zpfzn/Screen%20Shot%202016-08-05%20at%204.44.13%20PM.png?dl=0) no-repeat;
   background-size: cover;
   overflow: hidden;

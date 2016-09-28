@@ -1,7 +1,4 @@
 To do:
-- Make sure favicon works when operating from the Github server
-- Make it so web content is on top of video
-		- Maybe make video a little opaque so that it doesn't detract from web navigability?
 - Make the navbar prettier
-- Make all the text prettier (both in color and font)
-- Make it so the header doesn't change when you run your mouse over it
+- Make all the text a prettier font
+- Make it so the header doesn't change color and become underlined when you run your mouse over it

@@ -1,4 +1,0 @@
-To do:
-- Make the navbar prettier
-- Make all the text a prettier font
-- Make it so the header doesn't change color and become underlined when you run your mouse over it

@@ -110,6 +110,7 @@
 			});
 
 			// Resume:
+			$('.email').hide();
 			$('.download-button').hide();
 			$('.resume-overlay-wrapper').hide();
 			$('#resume').hover(() => {
@@ -186,8 +187,14 @@
 							delay:		40,
 							initialize:	function() { $(this).addClass('inactive'); },
 							terminate:	function() { $(this).removeClass('inactive'); },
-							enter:		function() { $(this).removeClass('inactive'); },
-							leave:		function() { $(this).addClass('inactive'); }
+							enter:		function() {
+								$(this).removeClass('inactive');
+								$('.email').fadeIn(300);
+							},
+							leave:		function() {
+								$(this).addClass('inactive');
+								$('.email').fadeOut(200);
+							}
 						});
 
 			};

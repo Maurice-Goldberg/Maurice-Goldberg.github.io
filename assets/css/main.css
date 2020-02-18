@@ -110,7 +110,19 @@
 	border-bottom-right-radius: 5px;
 }
 
+.email button {
+	text-decoration: none;
+	font-size: 24px;
+	cursor: pointer;
+	background-color: rgba(17, 135, 142, 0.488);
+}
+
+.email button:hover {
+	background-color: rgb(13, 100, 113);
+}
+
 #resume {
+	margin-top: 50px;
 	display: flex;
 	justify-content: center;
 }

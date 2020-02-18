@@ -103,10 +103,8 @@
 			});
 
 			$('.modal-bg').click(() => {
-				$('.modal-bg').fadeOut(300);
-				$('.modal-child').fadeOut(300);
-				// $('.soundshroud-modal').hide();
-				// $('.modal-bg').hide();
+				$('.modal-bg').fadeOut(200);
+				$('.modal-child').fadeOut(200);
 			});
 
 			// Resume:

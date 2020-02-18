@@ -726,6 +726,74 @@ input, select, textarea {
 
 		}
 
+		@media screen and (max-width: 568px) {
+
+			.email button {
+				width: 300px;
+				font-size: 14px;
+			}
+
+			#resume-img {
+				margin-top: -20px;
+				height: 600px;
+				width: 489.95px;
+			}
+
+		}
+
+		@media screen and (max-width: 414px) {
+
+			.email button {
+				width: 300px;
+				font-size: 14px;
+			}
+
+			#resume-img {
+				margin-top: -20px;
+				height: 450px;
+				width: 368.39px;
+			}
+
+			.resume-overlay-wrapper {
+				display: none;
+			}
+
+			.download-button-wrapper {
+				
+			}
+		}
+
+
+		@media screen and (max-width: 375px) {
+
+			.email button {
+				width: 300px;
+				font-size: 14px;
+			}
+
+			#resume-img {
+				margin-top: -20px;
+				height: 400px;
+				width: 327.455px;
+			}
+
+		}
+
+		@media screen and (max-width: 320px) {
+
+			.email button {
+				width: 230px;
+				font-size: 11px;
+			}
+
+			#resume-img {
+				margin-top: -30px;
+				height: 375px;
+				width: 296.819px;
+			}
+
+		}
+
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 900;
 		color: inherit;

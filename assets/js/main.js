@@ -97,41 +97,55 @@
 			// Custom gallery modals:
 			$('.modal-child').hide();
 			$('.modal-bg').hide();
-			$('#soundshroud-img').click(() => {
-				$('#soundshroud-modal').fadeIn(500);
-				$('.modal-bg').fadeIn(300);
-			});
 
-			$('.modal-bg').click(() => {
-				$('.modal-bg').fadeOut(200);
-				$('.modal-child').fadeOut(200);
-			});
-
-			// Resume:
+			// Resume and email:
 			$('.email').hide();
 			$('.download-button').hide();
 			$('.resume-overlay-wrapper').hide();
-			$('#resume').hover(() => {
-				$('.download-button').fadeIn(500);
-				$('.resume-overlay-wrapper').fadeIn(300);
-			});
 
-			$('#resume').mouseleave(() => {
-				$('.download-button').fadeOut(300);
-				$('.resume-overlay-wrapper').fadeOut(500);
-			})
+			console.log(document.documentElement.clientWidth);
+			console.log(document.documentElement.clientWidth > 414);
+			
+			console.log(parseInt(document.documentElement.clientWidth));
+			console.log(parseInt(document.documentElement.clientWidth) > 414);
+
+			if(parseInt(document.documentElement.clientWidth) > 414) {
+				// Resume download capability:
+				$('#resume').hover(() => {
+					$('.download-button').fadeIn(500);
+					$('.resume-overlay-wrapper').fadeIn(300);
+				});
+
+				$('#resume').mouseleave(() => {
+					$('.download-button').fadeOut(300);
+					$('.resume-overlay-wrapper').fadeOut(500);
+				});
+
+				// Custom gallery modals:
+				$('#soundshroud-img').click(() => {
+					$('#soundshroud-modal').fadeIn(500);
+					$('.modal-bg').fadeIn(300);
+				});
+
+				$('.modal-bg').click(() => {
+					$('.modal-bg').fadeOut(200);
+					$('.modal-child').fadeOut(200);
+				});
+			}
+
+			
 
 			// Hack: Adjust margins when 'small' activates.
 				// breakpoints.on('>small', function() {
-				// 	$gallery.each(function() {
-				// 		$(this)[0]._poptrox.windowMargin = 50;
-				// 	});
+				// 	// $gallery.each(function() {
+				// 	// 	$(this)[0]._poptrox.windowMargin = 50;
+				// 	// });
 				// });
 
 				// breakpoints.on('<=small', function() {
-				// 	$gallery.each(function() {
-				// 		$(this)[0]._poptrox.windowMargin = 5;
-				// 	});
+				// 	// $gallery.each(function() {
+				// 	// 	$(this)[0]._poptrox.windowMargin = 5;
+				// 	// });
 				// });
 
 		});

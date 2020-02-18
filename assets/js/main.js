@@ -81,31 +81,59 @@
 
 			var $gallery = $('.gallery');
 
-			$gallery.poptrox({
-				baseZIndex: 10001,
-				useBodyOverflow: false,
-				usePopupEasyClose: false,
-				overlayColor: '#1f2328',
-				overlayOpacity: 0.65,
-				usePopupDefaultStyling: false,
-				usePopupCaption: true,
-				popupLoaderText: '',
-				windowMargin: 50,
-				usePopupNav: true
+			// $gallery.poptrox({
+			// 	baseZIndex: 10001,
+			// 	useBodyOverflow: false,
+			// 	usePopupEasyClose: false,
+			// 	overlayColor: '#1f2328',
+			// 	overlayOpacity: 0.65,
+			// 	usePopupDefaultStyling: false,
+			// 	usePopupCaption: true,
+			// 	popupLoaderText: '',
+			// 	windowMargin: 50,
+			// 	usePopupNav: true
+			// });
+
+			// Custom gallery modals:
+			$('.modal-child').hide();
+			$('.modal-bg').hide();
+			$('#soundshroud-img').click(() => {
+				$('#soundshroud-modal').fadeIn(500);
+				$('.modal-bg').fadeIn(300);
 			});
 
-			// Hack: Adjust margins when 'small' activates.
-				breakpoints.on('>small', function() {
-					$gallery.each(function() {
-						$(this)[0]._poptrox.windowMargin = 50;
-					});
-				});
+			$('.modal-bg').click(() => {
+				$('.modal-bg').fadeOut(500);
+				$('.modal-child').fadeOut(300);
+				// $('.soundshroud-modal').hide();
+				// $('.modal-bg').hide();
+			});
 
-				breakpoints.on('<=small', function() {
-					$gallery.each(function() {
-						$(this)[0]._poptrox.windowMargin = 5;
-					});
-				});
+			// Resume:
+			$('.download-button').hide();
+			$('.resume-overlay-wrapper').hide();
+			$('#resume').hover(() => {
+				$('.download-button').fadeIn(500);
+				$('.resume-overlay-wrapper').fadeIn(300);
+			});
+
+			$('#resume').mouseleave(() => {
+				$('.download-button').fadeOut(300);
+				$('.resume-overlay-wrapper').fadeOut(500);
+			})
+
+			// Hack: Adjust margins when 'small' activates.
+				// breakpoints.on('>small', function() {
+				// 	$gallery.each(function() {
+				// 		$(this)[0]._poptrox.windowMargin = 50;
+				// 	});
+				// });
+
+				// breakpoints.on('<=small', function() {
+				// 	$gallery.each(function() {
+				// 		$(this)[0]._poptrox.windowMargin = 5;
+				// 	});
+				// });
 
 		});
 
@@ -117,13 +145,17 @@
 				// Galleries.
 					$('.gallery')
 						.scrollex({
-							top:		'30vh',
-							bottom:		'30vh',
-							delay:		50,
+							top:		'25vh',
+							bottom:		'25vh',
+							delay:		10,
 							initialize:	function() { $(this).addClass('inactive'); },
 							terminate:	function() { $(this).removeClass('inactive'); },
 							enter:		function() { $(this).removeClass('inactive'); },
-							leave:		function() { $(this).addClass('inactive'); }
+							leave:		function() { 
+								$(this).addClass('inactive');
+								$('.modal-child').fadeOut('slow');
+								$('.modal-bg').fadeOut('slow');
+							}
 						});
 
 				// Generic sections.
@@ -150,7 +182,7 @@
 				// Contact.
 					$('#contact')
 						.scrollex({
-							top:		'50%',
+							top:		'10%',
 							delay:		50,
 							initialize:	function() { $(this).addClass('inactive'); },
 							terminate:	function() { $(this).removeClass('inactive'); },
@@ -199,7 +231,7 @@
 
 					// Update scrolly links.
 						$('a[href^="#"]').scrolly({
-							speed: 1500,
+							speed: 800,
 							offset: $header.outerHeight() - 1
 						});
 

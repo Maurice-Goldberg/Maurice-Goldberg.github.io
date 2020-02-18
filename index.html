@@ -30,9 +30,9 @@
 			<section id="intro" class="main style1 dark fullscreen">
 				<div class="content">
 					<header>
-						<h2>Maurice Goldberg</h2>
+						<h2 class="name">Maurice Goldberg</h2>
 					</header>
-					<p>
+					<p class="bio">
 					Full-Stack engineer with a degree in Computer Science from Columbia University
 					and expertise in React, Redux, Rails, and C++
 					</p>
@@ -46,34 +46,58 @@
 			<section id="work" class="main style3 primary">
 				<div class="content">
 					<header>
-						<h2>Projects</h2>
-						<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.
-						Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis
-						arcu, id varius justo euismod in. Curabitur egestas consectetur magna vitae.</p>
+						<h2 class="projects">Projects</h2>
+						<p>React, Redux, Rails, PostgreSQL, MongoDB, Express, Node, jQuery, AJAX, HTML, CSS, SASS, Bootstrap, Wavesurfer, Google Maps API, Google Civic Information API, Ticketmaster API, Cinema4D</p>
 					</header>
 
 					<!-- Gallery  -->
-						<div class="gallery">
-							<article class="from-left">
-								<a href="images/fulls/01.jpg" class="image fit"><img src="images/thumbs/01.jpg" title="The Anonymous Red" alt="" /></a>
-							</article>
-							<article class="from-right">
-								<a href="images/fulls/02.jpg" class="image fit"><img src="images/thumbs/02.jpg" title="Airchitecture II" alt="" /></a>
-							</article>
-							<article class="from-left">
-								<a href="images/fulls/03.jpg" class="image fit"><img src="images/thumbs/03.jpg" title="Air Lounge" alt="" /></a>
-							</article>
-							<article class="from-right">
-								<a href="images/fulls/04.jpg" class="image fit"><img src="images/thumbs/04.jpg" title="Carry on" alt="" /></a>
-							</article>
-							<article class="from-left">
-								<a href="images/fulls/05.jpg" class="image fit"><img src="images/thumbs/05.jpg" title="The sparkling shell" alt="" /></a>
-							</article>
-							<article class="from-right">
-								<a href="images/fulls/06.jpg" class="image fit"><img src="images/thumbs/06.jpg" title="Bent IX" alt="" /></a>
-							</article>
-						</div>
-
+					<div id="soundshroud-modal" class="modal-child">
+						<img class="gif" src="images/fulls/discover_page.gif">
+						<div class="gif-overlay"></div>
+						<a href="http://soundshroud000.herokuapp.com/#/" target="_blank">
+							<button class="live-link">Live site</button>
+						</a>
+						<a href="https://github.com/Maurice-Goldberg/SoundShroud" target="_blank">
+							<button class="github-link">Github</button>
+						</a>
+						<p class="caption">
+							SoundShroud (2020): a pixel-perfect dark mode clone of SoundCloud (React-Redux, Rails, PostgreSQL, AJAX, Wavesurfer,
+							HTML, CSS)
+						</p>
+					</div>
+					<div class="modal-bg"></div>
+					<div class="gallery">
+						<article class="from-left">
+							<div class="image fit" id="soundshroud-img">
+								<img src="images/thumbs/soundshroud.png" alt="" />
+							</div>
+						</article>
+						<article class="from-right">
+								<div class="image fit" id="masher-img">
+									<img src="images/thumbs/masher.png" title="MASHER (2020): a web app that combines pop hits to create new hybrid songs (Vanilla JS, Web Audio API, HTML, CSS)" alt="" />
+								</div>
+						</article>
+						<article class="from-left">
+							<div class="image fit" id="plantr-img">
+								<img src="images/thumbs/plantr.png" title="plantr (2020): a MERNStack web app that reminds you via email when to water your plants (MongoDB, Express, React-Redux, Node, HTML, CSS)" alt="" />
+							</div>
+						</article>
+						<article class="from-right">
+							<div class="image fit" id="showdown-img">
+								<img src="images/thumbs/showdown.png" title="ShowDown (2016): a web app that finds nearby events using the Ticketmaster and Google Maps APIs (Angular, jQuery, AJAX, HTML, CSS)" alt="" />
+							</div>
+						</article>
+						<article class="from-left">
+							<div class="image fit" id="cys-img">
+								<img src="images/thumbs/call_your_senators.png" title="Call Your Senators! (2016): a web app that finds your local and state representatives (jQuery, Google Civic Information API, HTML, CSS)" alt="" />
+							</div>
+						</article>
+						<article class="from-right">
+							<div class="image fit" id="dark-cartoon-img">
+								<img src="images/thumbs/dark_cartoon.png" title="Dark Cartoon: a short 3D video loop made in Cinema4D" alt="" />
+							</div>
+						</article>
+					</div>
 				</div>
 			</section>
 
@@ -81,42 +105,33 @@
 			<section id="contact" class="main style3 secondary">
 				<div class="content">
 					<header>
-						<h2>Get in touch</h2>
-						<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.</p>
+						<h2 class="get-in-touch">Email & Resume</h2>
 					</header>
 					<div class="box">
-						<form method="post" action="#">
-							<div class="fields">
-								<div class="field half"><input type="text" name="name" placeholder="Name" /></div>
-								<div class="field half"><input type="email" name="email" placeholder="Email" /></div>
-								<div class="field"><textarea name="message" placeholder="Message" rows="6"></textarea></div>
-							</div>
-							<ul class="actions special">
-								<li><input type="submit" value="Send Message" /></li>
-							</ul>
-						</form>
+						<article class="from-bottom">
+							<form method="get" action="Resume (Maurice Goldberg).pdf" class="image fit" id="resume" target="_blank">
+								<img id="resume-img"
+									src="images/thumbs/resume.png"
+									title=""
+									alt="" />
+									<div class="resume-overlay-wrapper">
+										<div class="resume-overlay"></div>
+									</div>
+									<div class="download-button-wrapper">
+										<button type="submit" class="download-button">Download</button>
+									</div>
+							</form>
+						</article>
 					</div>
 				</div>
 			</section>
 
 		<!-- Footer -->
 			<footer id="footer">
-
 				<!-- Icons -->
 					<ul class="icons">
-						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-						<li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
+						<li><a href="https://www.linkedin.com/in/goldbergmaurice/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 					</ul>
-
-				<!-- Menu -->
-					<ul class="menu">
-						<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-					</ul>
-
 			</footer>
 
 		<!-- Scripts -->

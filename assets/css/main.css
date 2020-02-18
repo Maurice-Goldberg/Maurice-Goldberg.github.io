@@ -1,6 +1,171 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 @import url("fontawesome-all.min.css");
 
+.bio {
+	margin-top: 80px;
+	text-shadow: 1px 1px 1px black;
+	font-size: 22px;
+}
+
+.name {
+	margin-top: 60px;
+}
+
+.projects {
+	margin-top: -60px;
+}
+
+.get-in-touch {
+	margin-top: -60px;
+}
+
+.technologies {
+	margin-top: -8px;
+}
+
+#soundshroud-img:hover, #masher-img:hover, #plantr-img:hover, #showdown-img:hover, #cys-img:hover, #dark-cartoon-img:hover {
+	cursor: pointer;
+}
+
+.modal-child {
+	margin: 0 auto;
+	margin-left: -140px;
+	position: absolute;
+	z-index: 2;
+	overflow: hidden;
+}
+
+.gif {
+	width: 100%;
+	height: 100%;
+}
+
+.gif-overlay {
+	width: 100%;
+	height: 88.5%;
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 3;
+}
+
+.modal-child .live-link {
+	position: absolute;
+	left: 500px;
+	top: 250px;
+	z-index: 4;
+	background: rgba(255, 255, 255, 0.2);
+	color: white;
+	border: 1px solid white;
+	width: 120px;
+	height: auto;
+	border-radius: 5px;
+	font-size: 24px;
+	padding: 0px;
+}
+
+.modal-child .live-link:hover {
+	background: rgba(255, 255, 255, 0.3);
+}
+
+.modal-child .github-link {
+	position: absolute;
+	left: 650px;
+	top: 250px;
+	z-index: 4;
+	background: rgba(255, 255, 255, 0.2);
+	color: white;
+	border: 1px solid white;
+	width: 120px;
+	height: auto;
+	border-radius: 5px;
+	font-size: 24px;
+	padding: 0px;
+}
+
+.modal-child .github-link:hover {
+	background: rgba(255, 255, 255, 0.3);
+}
+
+.modal-bg {
+	position: absolute;
+	z-index: 1;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.65);
+}
+
+.caption {
+	font-size: 20px;
+	margin-top: -15px;
+	padding-top: 15px;
+	width: 100%;
+	height: 65px;
+	vertical-align: center;
+	background: white;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+#resume {
+	display: flex;
+	justify-content: center;
+}
+
+#resume:before {
+	background: none;
+}
+
+#resume-img {
+	height: 800px;
+	width: 632.91px;
+}
+
+.resume-overlay-wrapper {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.resume-overlay {
+	margin: 0 auto;
+	height: 800px;
+	width: 632.91px;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.download-button-wrapper {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	display: flex;
+	justify-content: center;
+	z-index: 2;
+}
+
+.download-button {
+	margin-top: 250px;
+	background: rgba(255, 255, 255, 0.2);
+	color: white;
+	border: 1px solid white;
+	width: 120px;
+	height: 86px;
+	border-radius: 5px;
+	font-size: 24px;
+	padding: 0px;
+}
+
+.download-button:hover {
+	background: rgba(255, 255, 255, 0.4);
+}
+
 /*
 	Big Picture by HTML5 UP
 	html5up.net | @ajlkn
@@ -8,7 +173,7 @@
 */
 
 html, body, div, span, applet, object,
-iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+iframe, h1, h3, h4, h5, h6, blockquote,
 pre, a, abbr, acronym, address, big, cite,
 code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b,
@@ -621,9 +786,10 @@ input, select, textarea {
 /* Box */
 
 	.box {
-		background: #ffffff;
+		margin-top: -15px;
+		background: transparent;
 		color: #39454b;
-		padding: 2em;
+		/* padding: 2em; */
 	}
 
 		.box > :last-child {
@@ -1430,6 +1596,7 @@ input, select, textarea {
 		width: 45em;
 		max-width: 100%;
 		margin: 0 auto 2em auto;
+		margin-top: -25px;
 	}
 
 		.gallery article {
@@ -2244,7 +2411,7 @@ input, select, textarea {
 /* Intro */
 
 	#intro {
-		background: url("images/overlay.png"), url("../../images/intro.jpg");
+		background: url("images/overlay.png"), url("../../images/intro.png");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;

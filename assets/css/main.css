@@ -707,6 +707,31 @@ input, select, textarea {
 				font-size: 13pt;
 			}
 
+			.modal-child {
+				width: 900px;
+				height: auto;
+				margin-left: -60px;
+				margin-top: -40px;
+			}
+
+			.gif-overlay {
+				height: 84.5%;
+			}
+
+			.caption {
+				padding-top: 20px;
+				font-size: 15px;
+			}
+
+			.modal-child .live-link {
+				left: 320px;
+				top: 170px;
+			}
+
+			.modal-child .github-link {
+				left: 490px;
+				top: 170px;
+			}
 		}
 
 		@media screen and (max-width: 1000px) {
@@ -754,13 +779,6 @@ input, select, textarea {
 				width: 368.39px;
 			}
 
-			.resume-overlay-wrapper {
-				display: none;
-			}
-
-			.download-button-wrapper {
-				
-			}
 		}
 
 

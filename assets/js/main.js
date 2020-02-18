@@ -103,7 +103,7 @@
 			});
 
 			$('.modal-bg').click(() => {
-				$('.modal-bg').fadeOut(500);
+				$('.modal-bg').fadeOut(300);
 				$('.modal-child').fadeOut(300);
 				// $('.soundshroud-modal').hide();
 				// $('.modal-bg').hide();
@@ -183,7 +183,7 @@
 					$('#contact')
 						.scrollex({
 							top:		'10%',
-							delay:		50,
+							delay:		40,
 							initialize:	function() { $(this).addClass('inactive'); },
 							terminate:	function() { $(this).removeClass('inactive'); },
 							enter:		function() { $(this).removeClass('inactive'); },

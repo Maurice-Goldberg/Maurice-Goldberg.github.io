@@ -417,7 +417,7 @@ input, select, textarea {
 			-webkit-transform: scale(1) rotate(0deg);
 			-ms-transform: scale(1) rotate(0deg);
 			transform: scale(1) rotate(0deg);
-			color: #e5e6e7;
+			color: rgba(17, 135, 142, 0.488);
 			z-index: 100001;
 		}
 
@@ -426,7 +426,7 @@ input, select, textarea {
 			-webkit-transform: scale(0.5) rotate(360deg);
 			-ms-transform: scale(0.5) rotate(360deg);
 			transform: scale(0.5) rotate(360deg);
-			color: #e5e6e7;
+			color: rgba(17, 135, 142, 0.488);
 			z-index: 100001;
 		}
 
@@ -435,7 +435,7 @@ input, select, textarea {
 			-webkit-transform: scale(0.5) rotate(360deg);
 			-ms-transform: scale(0.5) rotate(360deg);
 			transform: scale(0.5) rotate(360deg);
-			color: #e5e6e7;
+			color: rgba(17, 135, 142, 0.488);
 			z-index: -1;
 		}
 	}
@@ -446,7 +446,7 @@ input, select, textarea {
 			-webkit-transform: scale(1) rotate(0deg);
 			-ms-transform: scale(1) rotate(0deg);
 			transform: scale(1) rotate(0deg);
-			color: #e5e6e7;
+			color: rgba(17, 135, 142, 0.488);
 			z-index: 100001;
 		}
 
@@ -455,7 +455,7 @@ input, select, textarea {
 			-webkit-transform: scale(0.5) rotate(360deg);
 			-ms-transform: scale(0.5) rotate(360deg);
 			transform: scale(0.5) rotate(360deg);
-			color: #e5e6e7;
+			color: rgba(17, 135, 142, 0.488);
 			z-index: 100001;
 		}
 
@@ -464,7 +464,7 @@ input, select, textarea {
 			-webkit-transform: scale(0.5) rotate(360deg);
 			-ms-transform: scale(0.5) rotate(360deg);
 			transform: scale(0.5) rotate(360deg);
-			color: #e5e6e7;
+			color: rgba(17, 135, 142, 0.488);
 			z-index: -1;
 		}
 	}
@@ -475,7 +475,7 @@ input, select, textarea {
 			-webkit-transform: scale(1) rotate(0deg);
 			-ms-transform: scale(1) rotate(0deg);
 			transform: scale(1) rotate(0deg);
-			color: #e5e6e7;
+			color: rgba(17, 135, 142, 0.488);
 			z-index: 100001;
 		}
 
@@ -484,7 +484,7 @@ input, select, textarea {
 			-webkit-transform: scale(0.5) rotate(360deg);
 			-ms-transform: scale(0.5) rotate(360deg);
 			transform: scale(0.5) rotate(360deg);
-			color: #e5e6e7;
+			color: rgba(17, 135, 142, 0.488);
 			z-index: 100001;
 		}
 
@@ -493,7 +493,7 @@ input, select, textarea {
 			-webkit-transform: scale(0.5) rotate(360deg);
 			-ms-transform: scale(0.5) rotate(360deg);
 			transform: scale(0.5) rotate(360deg);
-			color: #e5e6e7;
+			color: rgba(17, 135, 142, 0.488);
 			z-index: -1;
 		}
 	}
@@ -504,7 +504,7 @@ input, select, textarea {
 			-webkit-transform: scale(1) rotate(0deg);
 			-ms-transform: scale(1) rotate(0deg);
 			transform: scale(1) rotate(0deg);
-			color: #e5e6e7;
+			color: rgba(17, 135, 142, 0.488);
 			z-index: 100001;
 		}
 
@@ -513,7 +513,7 @@ input, select, textarea {
 			-webkit-transform: scale(0.5) rotate(360deg);
 			-ms-transform: scale(0.5) rotate(360deg);
 			transform: scale(0.5) rotate(360deg);
-			color: #e5e6e7;
+			color: rgba(17, 135, 142, 0.488);
 			z-index: 100001;
 		}
 
@@ -522,7 +522,7 @@ input, select, textarea {
 			-webkit-transform: scale(0.5) rotate(360deg);
 			-ms-transform: scale(0.5) rotate(360deg);
 			transform: scale(0.5) rotate(360deg);
-			color: #e5e6e7;
+			color: rgba(17, 135, 142, 0.488);
 			z-index: -1;
 		}
 	}

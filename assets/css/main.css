@@ -9,6 +9,11 @@
 
 .name {
 	margin-top: 60px;
+	color: white;
+}
+
+li {
+	color: rgb(13, 100, 113);
 }
 
 .projects {
@@ -848,7 +853,7 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 900;
-		color: inherit;
+		color:  rgb(13, 100, 113);
 		letter-spacing: -0.0325em;
 	}
 

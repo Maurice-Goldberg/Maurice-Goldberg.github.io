@@ -147,8 +147,8 @@
 					$('.modal-bg').fadeIn(300);
 				});
 
-				$('#dark-cartoon-img').click(() => {
-					$('#dark-cartoon-modal').fadeIn(500);
+				$('#best-wines-img').click(() => {
+					$('#best-wines-modal').fadeIn(500);
 					$('.modal-bg').fadeIn(300);
 				});
 

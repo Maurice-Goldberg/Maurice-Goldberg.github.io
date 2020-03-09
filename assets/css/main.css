@@ -28,7 +28,7 @@ li {
 	margin-top: -10px;
 }
 
-#soundshroud-img:hover, #masher-img:hover, #plantr-img:hover, #showdown-img:hover, #cys-img:hover, #dark-cartoon-img:hover {
+#soundshroud-img:hover, #masher-img:hover, #plantr-img:hover, #showdown-img:hover, #cys-img:hover, #best-wine-img:hover {
 	cursor: pointer;
 }
 
@@ -39,10 +39,10 @@ li {
 	z-index: 2;
 }
 
-#dark-cartoon-modal {
+/* #dark-cartoon-modal {
 	width: 1280px;
 	height: 619.5px;
-}
+} */
 
 .gif {
 	width: 1280px;
